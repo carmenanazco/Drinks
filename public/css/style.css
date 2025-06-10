@@ -1,0 +1,348 @@
+/*Paleta
+#F0E3CA ---- claro
+#FF8303 ---- naranja
+#A35709  --- naranja opaco
+#1B1A17 --- oscuro
+*/
+
+:root {
+    --color1: #F0E3CA;
+    --color2: #FF8303;
+    --color3: #A35709;
+    --bg-color: #1B1A17;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--bg-color);
+    background-color: var(--color1);
+    line-height: 1.6;
+}
+
+header {
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color);;
+}
+
+header a img{
+    height: 10dvh;
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav .navMobile {
+    display: none;
+    height: 50PX;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+header nav ul li{
+    list-style-type: none;
+    margin: 10px; 
+}
+
+nav a {
+    color: var(--color1);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: var(--color3);
+    color: var(--bg-color);
+    cursor: pointer;
+}
+
+nav .navMobile {
+    display: none;
+    height: 50PX;
+}
+
+/*hero*/
+.hero {
+    width: 100%; 
+    height: 90dvh;
+    background-image: url(../img/hero2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: var(--color1);
+
+}
+
+.column{
+    height: 70%;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.column p{
+    width: 70%;   
+
+    padding: 10px;
+    font-optical-sizing: auto;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    padding-right: 20px;
+}
+
+
+/* Seccion con alcohol*/
+
+/*
+
+
+
+
+*/
+.section {
+    padding: 3rem 1rem;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap;
+
+}
+
+.section h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--color3);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+button{
+    text-decoration: none;
+    color: var(--color1);
+    background-color: var(--color3);
+    border: 2px solid #CFBFC6;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+/* .tragos {
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+} */
+
+
+
+.card{
+    position: static;
+}
+
+
+/*Sin alcohol*/
+.smoothies, .licuados {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 2vh;
+    padding: 2vh;
+    flex-wrap: wrap;
+}
+
+.cardsSinAlcohol {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.licuados {
+    background-image: url(../img/fondo-licuado.jpeg);
+    }
+
+.smoothies {
+    background-image: url(../img/fondo-smoothie.jpeg);
+}
+
+.cardsSinAlcohol .receta{
+    background-color: rgba(251, 251, 251, 0.7);
+
+}
+
+/*cafe*/
+
+.receta {
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+.receta p {
+    margin: 1.5em;
+}
+.receta figure {
+    margin: 1em;
+    align-items: center;
+}
+.receta figure img {
+    width: 200px;
+    height: 200px;
+}
+.receta h3 {
+    color: var(--color3);
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0 0 1em;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5em;
+}
+
+.receta img {
+    max-width: 100%;
+    max-height: 300px;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.receta h4 {
+    color: var(--color2);
+    font-size: 1em;
+    font-weight: 200;
+}
+
+
+/*Contacto*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 2rem auto 0;
+}
+
+form input, form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: var(--color2);
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: var(--color3);
+}
+
+
+
+/*footer*/
+
+footer {
+    background-color: var(--bg-color);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+}
+
+@media (max-width: 550px) {
+header a img{
+    height: 5dvh;
+}
+
+nav {
+    height: 50%;
+    background: var(--bg-color);
+}
+nav .navDesktop {
+    display: none;
+}
+nav .navMobile {
+    display: contents;
+}
+.offcanvas.offcanvas-end {
+    width: 50%;
+}
+.navbar-toggler {
+    font-size: 10px;
+    background-color: var(--color1);
+}
+
+.alcohol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3 {
+    font-size: 3vh;
+}
+h4 {
+    font-size: 2vh;
+    line-height: 1vh;
+}
+
+.column{
+    height: 60%;
+    margin: 10px;
+}
+
+.hero p {
+    font-size: 1.75vh;
+}
+p {
+    font-size: 1.75vh;
+}
+
+
+.cardsSinAlcohol {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+}
+
