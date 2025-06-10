@@ -3,8 +3,9 @@ import cors from 'cors';
 import nodemailer from 'nodemailer';
 import __dirname from './utils.js'
 import path from "path"
-import { configDotenv } from 'dotenv';
-configDotenv
+import dotenv from 'dotenv';
+
+dotenv.config()
 
 const app = express();
 const PORT = process.env.PORT;
